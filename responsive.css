@@ -1,0 +1,33 @@
+/* Mobile Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  padding: 20px;
+  
+  border-style: solid;
+  border-color: #ff0000; /* red */
+}
+
+/* Tablet Styles (768px) */
+@media (min-width: 768px) {
+  header, main, footer {
+    padding: 40px;
+	
+	border-style: solid;
+	border-color: #00ff00; /* green */
+  }
+}
+
+/* Desktop Styles (1024px) */
+@media (min-width: 1024px) {
+  header, main, footer {
+    padding: 60px;
+	
+	border-style: solid;
+	border-color: #0000ff; /* blue */
+  }
+}
