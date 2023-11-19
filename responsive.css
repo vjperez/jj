@@ -5,12 +5,29 @@ body {
   padding: 0;
 }
 
+
+/* At viewport widths up to 768px */
 header, main, footer {
   padding: 20px;
   
   border-style: solid;
   border-color: #ff0000; /* red */
 }
+
+
+#place1,
+#place2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 350px;
+  text-align: center;
+  margin: 10px;
+}
+
 
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
@@ -19,6 +36,14 @@ header, main, footer {
 	
 	border-style: solid;
 	border-color: #00ff00; /* green */
+  }
+  
+  #place1,
+  #place2 {
+    justify-content: flex-start;
+  }
+  .product {
+    width: calc(50% - 20px); /* Subtracting margin from total width */
   }
 }
 
@@ -30,4 +55,7 @@ header, main, footer {
 	border-style: solid;
 	border-color: #0000ff; /* blue */
   }
+  
 }
+
+
