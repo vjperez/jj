@@ -56,6 +56,9 @@ header, main, footer {
 	border-color: #0000ff; /* blue */
   }
   
+  .product {
+  width: calc(33.33% - 20px); /* Subtracting margin from total width */
+  }
 }
 
 
