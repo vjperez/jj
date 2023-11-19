@@ -8,9 +8,7 @@ body {
 /* At viewport widths up to 768px */
 header, main, footer {
   padding: 20px;
-  
-  border-style: solid;
-  border-color: #ff0000; /* red */
+  border: 1px solid #ff0000; /* red */
 }
 
 #place1,
@@ -19,7 +17,6 @@ header, main, footer {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .product {
   width: 350px;
   text-align: center;
@@ -27,13 +24,12 @@ header, main, footer {
 }
 
 
+
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
   header, main, footer {
     padding: 40px;
-	
-	border-style: solid;
-	border-color: #00ff00; /* green */
+	border: 1px solid #00ff00; /* green */
   }
   
   #place1,
@@ -41,23 +37,24 @@ header, main, footer {
     justify-content: flex-start;
   }
   .product {
-    width: calc(50% - 20px); /* Subtracting margin from total width */
+    width: calc(50% - 30px); /* Subtracting margin from total width */
   }
 }
+
+
 
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
   header, main, footer {
     padding: 60px;
-	
-	border-style: solid;
-	border-color: #0000ff; /* blue */
-  }
-  
+	border: 1px solid #0000ff; /* blue */
+  }  
   .product {
-  width: calc(33.33% - 20px); /* Subtracting margin from total width */
+  width: calc(33.33% - 40px); /* Subtracting margin from total width */
   }
 }
+
+
 
 /* At viewport widths greater than 1200px */
 @media (min-width: 1200px) {
@@ -66,7 +63,7 @@ header, main, footer {
     justify-content: center;
   }
   .product {
-    width: calc(33.33% - 20px); /* Subtracting margin from total width */
+    width: calc(33.33% - 40px); /* Subtracting margin from total width */
     max-width: 350px; /* Maximum width for each product */
   }
 }
