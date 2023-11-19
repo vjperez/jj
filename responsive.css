@@ -59,4 +59,14 @@ header, main, footer {
   }
 }
 
-
+/* At viewport widths greater than 1200px */
+@media (min-width: 1200px) {
+  #place1,
+  #place2 {
+    justify-content: center;
+  }
+  .product {
+    width: calc(33.33% - 20px); /* Subtracting margin from total width */
+    max-width: 350px; /* Maximum width for each product */
+  }
+}
