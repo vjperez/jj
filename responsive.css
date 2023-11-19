@@ -5,8 +5,16 @@ body {
   padding: 0;
 }
 
+/* CSS for product images */
+.product img {
+  width: 300px;
+  heixxxxght: 240px;
+}
+
+
+/*  resposive code below this point */
 /* At viewport widths up to 768px */
-header, main, footer {
+header, main, footer, div[id^="place"] {
   padding: 20px;
   border: 1px solid #ff0000; /* red */
 }
@@ -27,7 +35,7 @@ header, main, footer {
 
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
-  header, main, footer {
+  header, main, footer, div[id^="place"] {
     padding: 40px;
 	border: 1px solid #00ff00; /* green */
   }
@@ -45,7 +53,7 @@ header, main, footer {
 
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
-  header, main, footer {
+  header, main, footer, div[id^="place"] {
     padding: 60px;
 	border: 1px solid #0000ff; /* blue */
   }  
