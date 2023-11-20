@@ -52,7 +52,7 @@ footer {
 /* At viewport widths up to 768px */
 main, footer, div[id^="place"] {
   padding: 20px;
-  border: 1px solid #ff0000; /* red */
+  /*   border: 1px solid #ff0000;  red   */
 }
 
 #place1,
@@ -73,7 +73,7 @@ main, footer, div[id^="place"] {
 @media (min-width: 768px) {
 main, footer, div[id^="place"] {
     padding: 40px;
-	border: 1px solid #00ff00; /* green */
+	/*   border: 1px solid #00ff00;  green   */
   }
   
   #place1,
@@ -99,7 +99,7 @@ main, footer, div[id^="place"] {
 @media (min-width: 1024px) {
 main, footer, div[id^="place"] {
     padding: 60px;
-	border: 1px solid #0000ff; /* blue */
+	/*   border: 1px solid #0000ff;  blue   */
   }  
   .product {
   width: calc(33.33% - 40px); /* Subtracting margin from total width */
