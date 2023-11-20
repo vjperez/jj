@@ -23,11 +23,27 @@ header img {
   font-style: italic;
 }
 
+/* Styling for the product button */
+.product-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded corners */
+  background-color: #d06383; /* Button color  was ffc0cb*/
+  color: white; /* Text color */
+  text-decoration: none; /* Remove default link underline */
+}
+
+.product-button:hover {
+  background-color: #9b3044; /* Change color on hover was ff69b4*/
+}
+
 /* Font family and size for footer */
 footer {
   font-family: 'Rubik Mono One', sans-serif; /* Fallback font to sans-serif */
   font-weight: 400;
-  font-size: 16px;
+  font-size: 10px;
+  text-align: right; /* Align text to the right */
+  color: #65b0cf; /* Set font color to blue  */
 }
 
 
