@@ -23,6 +23,13 @@ header img {
   font-style: italic;
 }
 
+/* Font family and size for footer */
+footer {
+  font-family: 'Rubik Mono One', sans-serif; /* Fallback font to sans-serif */
+  font-weight: 400;
+  font-size: 16px;
+}
+
 
 
 /*  resposive code below this point */
