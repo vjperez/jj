@@ -1,8 +1,13 @@
 /* Mobile Styles */
-body {
-  font-family: Arial, sans-serif;
+body, header {
   margin: 0;
   padding: 0;
+}
+
+header img {
+  width: 100%; /* Image takes the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensures the image behaves as a block element */
 }
 
 /* CSS for product images */
@@ -11,10 +16,18 @@ body {
   heixxxxght: 240px;
 }
 
+/* Font family for class product */
+.product {
+  font-family: 'Fira Sans', sans-serif; /* Fallback font to sans-serif */
+  font-weight: 400;
+  font-style: italic;
+}
+
+
 
 /*  resposive code below this point */
 /* At viewport widths up to 768px */
-header, main, footer, div[id^="place"] {
+main, footer, div[id^="place"] {
   padding: 20px;
   border: 1px solid #ff0000; /* red */
 }
@@ -35,7 +48,7 @@ header, main, footer, div[id^="place"] {
 
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
-  header, main, footer, div[id^="place"] {
+main, footer, div[id^="place"] {
     padding: 40px;
 	border: 1px solid #00ff00; /* green */
   }
@@ -47,13 +60,21 @@ header, main, footer, div[id^="place"] {
   .product {
     width: calc(50% - 30px); /* Subtracting margin from total width */
   }
+  
+  header {
+	text-align: center; /* Center-align the header content */
+}
+  header img {
+    max-width: 768px; /* Set maximum width for the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
 }
 
 
 
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
-  header, main, footer, div[id^="place"] {
+main, footer, div[id^="place"] {
     padding: 60px;
 	border: 1px solid #0000ff; /* blue */
   }  
