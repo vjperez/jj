@@ -51,8 +51,7 @@ footer {
 /*  resposive code below this point */
 /* At viewport widths up to 768px */
 main, footer, div[id^="place"] {
-  padding: 20px;
-  /*   border: 1px solid #ff0000;  red   */
+  padding: 20px;   border: 1px solid #ff0000;
 }
 
 #place1,
@@ -64,24 +63,32 @@ main, footer, div[id^="place"] {
 .product {
   width: 350px;
   text-align: center;
-  margin: 10px;
+  margin-top: 10px;   margin-bottom: 10px;   border: 1px solid #ff0000;
 }
 
 
 
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
-main, footer, div[id^="place"] {
+  main, footer, div[id^="place"] {
+    border: 1px solid #00ff00;
+  }
+  
+  main, footer {
     padding: 40px;
-	/*   border: 1px solid #00ff00;  green   */
+  }
+  
+   
+  div[id^="place"]  {
+	  padding: 0px;
   }
   
   #place1,
   #place2 {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .product {
-    width: calc(50% - 30px); /* Subtracting margin from total width */
+    width: calc(50% - 10px);    border: 1px solid #00ff00;   /* Subtracting margin from total width */
   }
   
   header {
@@ -97,12 +104,16 @@ main, footer, div[id^="place"] {
 
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
-main, footer, div[id^="place"] {
-    padding: 60px;
-	/*   border: 1px solid #0000ff;  blue   */
+  main, footer, div[id^="place"] {
+    border: 1px solid #0000ff;
   }  
+  
+  main, footer {
+    padding: 60px;
+  }
+  
   .product {
-  width: calc(33.33% - 40px); /* Subtracting margin from total width */
+    width: calc(33.33% - 7px);   border: 1px solid #0000ff;   /* Subtracting margin from total width */
   }
 }
 
@@ -110,12 +121,16 @@ main, footer, div[id^="place"] {
 
 /* At viewport widths greater than 1200px */
 @media (min-width: 1200px) {
+  main, footer, div[id^="place"] {
+    border: 1px solid #ffff00;
+  } 
+  
   #place1,
   #place2 {
     justify-content: center;
   }
   .product {
-    width: calc(33.33% - 40px); /* Subtracting margin from total width */
-    max-width: 350px; /* Maximum width for each product */
+    width: 350px;
+    margin: 10px;   border: 1px solid #ffff00;
   }
 }
