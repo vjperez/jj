@@ -62,7 +62,9 @@ div[id^="place"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 60px;
 }
+
 .product {
   width: 350px;
   text-align: center;
@@ -110,8 +112,7 @@ div[id^="place"] {
     padding: 60px;
   }
   
-  #place1,
-  #place2 {
+  div[id^="place"] {
     justify-content: center;
   }
   
