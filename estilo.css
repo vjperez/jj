@@ -13,7 +13,7 @@ header img {
 /* CSS for product images */
 .product img {
   width: 300px;
-  heixxxxght: 240px;
+  height: auto;
 }
 
 /* Font family for class product */
