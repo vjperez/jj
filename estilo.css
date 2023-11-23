@@ -1,5 +1,5 @@
 /* Mobile Styles */
-body, header {
+body, header, div[id^="place"] {
   margin: 0;
   padding: 0;
 }
@@ -50,12 +50,15 @@ footer {
 
 /*  resposive code below this point */
 /* At viewport widths up to 768px */
-main, footer, div[id^="place"] {
-  padding: 20px;   border: 1px solid #ff0000;
+main, div[id^="place"], .product, footer {
+  border: 1px solid #ff0000;
 }
 
-#place1,
-#place2 {
+main, footer {
+  padding: 20px;
+}
+
+div[id^="place"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -63,14 +66,14 @@ main, footer, div[id^="place"] {
 .product {
   width: 350px;
   text-align: center;
-  margin-top: 10px;   margin-bottom: 10px;   border: 1px solid #ff0000;
+  margin-top: 10px;   margin-bottom: 10px;
 }
 
 
 
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
-  main, footer, div[id^="place"] {
+  main, div[id^="place"], .product, footer{
     border: 1px solid #00ff00;
   }
   
@@ -78,17 +81,12 @@ main, footer, div[id^="place"] {
     padding: 40px;
   }
   
-   
-  div[id^="place"]  {
-	  padding: 0px;
-  }
-  
-  #place1,
-  #place2 {
+  div[id^="place"] {
     justify-content: space-between;
   }
+  
   .product {
-    width: calc(50% - 10px);    border: 1px solid #00ff00;   /* Subtracting margin from total width */
+    width: calc(50% - 10px);  /* Subtracting "space-between" from total width */
   }
   
   header {
@@ -104,7 +102,7 @@ main, footer, div[id^="place"] {
 
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
-  main, footer, div[id^="place"] {
+  main, div[id^="place"], .product, footer {
     border: 1px solid #0000ff;
   }  
   
@@ -112,8 +110,14 @@ main, footer, div[id^="place"] {
     padding: 60px;
   }
   
+  #place1,
+  #place2 {
+    justify-content: center;
+  }
+  
   .product {
-    width: calc(33.33% - 7px);   border: 1px solid #0000ff;   /* Subtracting margin from total width */
+    width: 333px; 
+	margin-left: 5px;
   }
 }
 
@@ -121,16 +125,11 @@ main, footer, div[id^="place"] {
 
 /* At viewport widths greater than 1200px */
 @media (min-width: 1200px) {
-  main, footer, div[id^="place"] {
+  main, div[id^="place"], .product, footer {
     border: 1px solid #ffff00;
   } 
   
-  #place1,
-  #place2 {
-    justify-content: center;
-  }
   .product {
     width: 350px;
-    margin: 10px;   border: 1px solid #ffff00;
   }
 }
