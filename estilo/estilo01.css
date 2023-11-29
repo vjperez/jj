@@ -84,11 +84,11 @@ div[id^="place"] {
   }
   
   div[id^="place"] {
-    justify-content: center;
+    justify-content: center;   /* keeping from above */
   }
   
   .product {
-    width: 350px; 
+    width: 350px;			  /* keeping from above */
 	margin-left: 10px;
   }
   
