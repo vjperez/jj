@@ -1,11 +1,11 @@
 // Function to fetch JSON data
 async function fetchData() {
   try {
-    const response = await fetch('info.json'); // Replace with your JSON file path
+    const response = await fetch('info.json');
     const datos = await response.json();
     return datos;
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error('Error fetchando data:', error);
   }
 }
 
@@ -42,9 +42,9 @@ function createProductElements(productArray, parentPlaceElementId) {
 }
 
 // Fetch data and create product elements
-fetchData().then(datos => {
-  datos.place-product-array.forEach(place-product => {
-    const placeId = `place${place-product.place}`;
-    createProductElements(place-product.product-array, placeId);
+fetchData().then(elJason => {
+  elJason.placeProductArray.forEach(placeProduct => {
+    const placeId = `place${placeProduct.place}`;
+    createProductElements(placeProduct.productoArray, placeId);
   });
 });
