@@ -44,6 +44,18 @@ function createProductElements(productArr, parentElementPlaceId) {
 }
 
 function shuffleArray(arr){
+	//array length   shuffles
+	//     0          0
+	//     1          0
+	//     2          2
+	//     3          4
+	for(let i = 0; i < 2 * (-1 + arr.length); i++){
+		const anIndex   = Math.floor(  arr.length * Math.random() );
+		const otherIndex = Math.floor(  arr.length * Math.random() );
+		const savedValue = arr[anIndex];
+		      arr[anIndex] = arr[otherIndex];
+			  arr[otherIndex] = savedValue;
+	}
 	return arr;
 }
 
