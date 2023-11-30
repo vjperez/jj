@@ -10,10 +10,10 @@ async function fetchData() {
 }
 
 // Function to create product elements
-function createProductElements(productArray, parentPlaceElementId) {
-  const parentPlaceElement = document.getElementById(parentPlaceElementId);
-  for(let index = 0; index < productArray.length; index++){
-	product = productArray[index];
+function createProductElements(productArr, parentElementPlaceId) {
+  const parentPlaceElement = document.getElementById(parentElementPlaceId);
+  for(let index = 0; index < productArr.length; index++){
+	product = productArr[index];
   
     const productDiv = document.createElement('div');
     productDiv.classList.add('product');
@@ -40,14 +40,22 @@ function createProductElements(productArray, parentPlaceElementId) {
     productDiv.appendChild(buyNowLink);
 
     parentPlaceElement.appendChild(productDiv);
-  
   }
 }
 
-// Fetch data and create product elements
+function shuffleArray(arr){
+	return arr;
+}
+
+// Fetch data, shuffle array and create product elements
 fetchData().then(elJason => {
   elJason.placeProductArray.forEach(placeProduct => {
+	  
+	//shuffle productoArray  
+	const shuffledArray = shuffleArray(placeProduct.productoArray);
+	//create elements
     const placeId = `place${placeProduct.place}`;
-    createProductElements(placeProduct.productoArray, placeId);
+    createProductElements(shuffledArray, placeId);
+	
   });
 });
