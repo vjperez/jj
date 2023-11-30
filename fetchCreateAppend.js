@@ -12,7 +12,9 @@ async function fetchData() {
 // Function to create product elements
 function createProductElements(productArray, parentPlaceElementId) {
   const parentPlaceElement = document.getElementById(parentPlaceElementId);
-  productArray.forEach(product => {
+  for(let index = 0; index < productArray.length; index++){
+	product = productArray[index];
+  
     const productDiv = document.createElement('div');
     productDiv.classList.add('product');
 
@@ -38,7 +40,8 @@ function createProductElements(productArray, parentPlaceElementId) {
     productDiv.appendChild(buyNowLink);
 
     parentPlaceElement.appendChild(productDiv);
-  });
+  
+  }
 }
 
 // Fetch data and create product elements
