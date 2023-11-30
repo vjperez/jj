@@ -55,6 +55,8 @@ function shuffleArray(arr){
 		const savedValue = arr[anIndex];
 		      arr[anIndex] = arr[otherIndex];
 			  arr[otherIndex] = savedValue;
+			  
+		//console.log(i + " shuffle")
 	}
 	return arr;
 }
