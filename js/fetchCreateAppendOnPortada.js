@@ -37,7 +37,7 @@ function createProductElements(productArr, parentElementPlaceId) {
 	
 	const moreImagesLink = document.createElement('a');
     moreImagesLink.href = product.moreImagesHref;
-    moreImagesLink.target = '_blank';
+    //moreImagesLink.target = '_blank';
     moreImagesLink.classList.add('product-button');
     moreImagesLink.textContent = '+ images';
 
