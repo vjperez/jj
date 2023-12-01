@@ -67,7 +67,7 @@ div[id^="place"] {
 }
 
 .product {
-  width: 350px;   /* rarely changes - only at 1024px */
+  width: 350px;   /* only changes at 1024px */
   text-align: center;
   margin-top: 10px;   margin-bottom: 10px;
 }
@@ -92,6 +92,7 @@ div[id^="place"] {
     max-width: 768px; /* Set maximum width for the image */
     margin: 0 auto; /* Center the image horizontally */
   }
+  
 }
 
 
@@ -109,6 +110,12 @@ div[id^="place"] {
   .product {
     width: 333px; 
   }
+  
+  header img {
+    max-width: 896px; /* Set maximum width for the image */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
 }
 
 
