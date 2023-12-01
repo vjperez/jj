@@ -1,7 +1,7 @@
 // Function to fetch JSON data
 async function fetchData() {
   try {
-    const response = await fetch('json/info.json');
+    const response = await fetch('json/productDetails.json');
     const datos = await response.json();
     return datos;
   } catch (error) {
@@ -34,9 +34,16 @@ function createProductElements(productArr, parentElementPlaceId) {
     buyNowLink.target = '_blank';
     buyNowLink.classList.add('product-button');
     buyNowLink.textContent = 'Buy Now';
+	
+	const moreImagesLink = document.createElement('a');
+    moreImagesLink.href = product.moreImagesHref;
+    moreImagesLink.target = '_blank';
+    moreImagesLink.classList.add('product-button');
+    moreImagesLink.textContent = '+ images';
 
     productDiv.appendChild(imageLink);
     productDiv.appendChild(productDescription);
+	productDiv.appendChild(moreImagesLink);
     productDiv.appendChild(buyNowLink);
 
     parentPlaceElement.appendChild(productDiv);
