@@ -53,7 +53,7 @@ footer {
 /*  resposive code below this point */
 /* At viewport widths up to 768px */
 main, div[id^="place"], .product, footer {
-  border: 1px solid #ff0000;
+  border: 0px solid #ff0000;
 }
 
 main, footer {
@@ -79,7 +79,7 @@ div[id^="place"] {
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
   main, div[id^="place"], .product, footer{
-    border: 1px solid #00ff00;
+    border: 0px solid #00ff00;
   }
   
   main, footer {
@@ -102,7 +102,7 @@ div[id^="place"] {
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
   main, div[id^="place"], .product, footer {
-    border: 1px solid #0000ff;
+    border: 0px solid #0000ff;
   }  
   
   main, footer {
@@ -125,7 +125,7 @@ div[id^="place"] {
 /* At viewport widths greater than 1200px */
 @media (min-width: 1200px) {
   main, div[id^="place"], .product, footer {
-    border: 1px solid #ffff00;
+    border: 0px solid #ffff00;
   } 
   
   .product {

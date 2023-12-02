@@ -58,7 +58,7 @@ footer {
 /*  resposive code below this point */
 /* At viewport widths up to 768px */
 main, #imagesDiv, .imageContainer, #buttonDiv, #videoDiv, footer {
-  border: 1px solid #ff0000;
+  border: 0px solid #ff0000;
 }
 
 main, #buttonDiv, #videoDiv, footer {
@@ -86,7 +86,7 @@ main, #buttonDiv, #videoDiv, footer {
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
   main, #imagesDiv, .imageContainer, #buttonDiv, #videoDiv,  footer{
-    border: 1px solid #00ff00;
+    border: 0px solid #00ff00;
   }
   
   main, #buttonDiv, #videoDiv, footer {
@@ -108,7 +108,7 @@ main, #buttonDiv, #videoDiv, footer {
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
   main, #imagesDiv, .imageContainer, #buttonDiv, #videoDiv, footer {
-    border: 1px solid #0000ff;
+    border: 0px solid #0000ff;
   }  
   
   main, #buttonDiv, #videoDiv, footer {
@@ -130,7 +130,7 @@ main, #buttonDiv, #videoDiv, footer {
 /* At viewport widths greater than 1200px */
 @media (min-width: 1200px) {
   main, #imagesDiv, .imageContainer,  #buttonDiv, #videoDiv, footer {
-    border: 1px solid #ffff00;
+    border: 0px solid #ffff00;
   } 
   
   .imageContainer {
