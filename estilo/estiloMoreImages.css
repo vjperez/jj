@@ -1,5 +1,5 @@
 /* Mobile Styles */
-body, header, #imagesDiv {
+body, header, #imagesDiv, #buttonDiv, #videoDiv {
   margin: 0;
   padding: 0;
 }
@@ -16,11 +16,14 @@ header img {
   height: auto;
 }
 
-/* Styling for the image container button */
-.imageContainer-button {
+#buttonDiv{
+  text-align: center;
+}
+
+/* Styling for the buy button */
+.buyButton {
   display: inline-block;
   padding: 10px 20px;
-  margin-left: 20px;
   
   border-radius: 20px; /* Rounded corners */
   background-color: #d06383; /* Button color  was ffc0cb*/
@@ -28,9 +31,18 @@ header img {
   text-decoration: none; /* Remove default link underline */
 }
 
-.imageContainer-button:hover {
+.buyButton:hover {
   background-color: #9b3044; /* Change color on hover was ff69b4*/
 }
+
+/* CSS to center the video */
+#videoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
 
 /* Font family and size for footer */
 footer {
@@ -45,11 +57,11 @@ footer {
 
 /*  resposive code below this point */
 /* At viewport widths up to 768px */
-main, #imagesDiv, .imageContainer, footer {
+main, #imagesDiv, .imageContainer, #buttonDiv, #videoDiv, footer {
   border: 1px solid #ff0000;
 }
 
-main, footer {
+main, #buttonDiv, #videoDiv, footer {
   padding: 20px;
 }
 
@@ -69,13 +81,15 @@ main, footer {
 
 
 
+
+
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
-  main, #imagesDiv, .imageContainer, footer{
+  main, #imagesDiv, .imageContainer, #buttonDiv, #videoDiv,  footer{
     border: 1px solid #00ff00;
   }
   
-  main, footer {
+  main, #buttonDiv, #videoDiv, footer {
     padding: 40px;
   }
   
@@ -93,11 +107,11 @@ main, footer {
 
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
-  main, #imagesDiv, .imageContainer, footer {
+  main, #imagesDiv, .imageContainer, #buttonDiv, #videoDiv, footer {
     border: 1px solid #0000ff;
   }  
   
-  main, footer {
+  main, #buttonDiv, #videoDiv, footer {
     padding: 60px;
   }
   
@@ -115,7 +129,7 @@ main, footer {
 
 /* At viewport widths greater than 1200px */
 @media (min-width: 1200px) {
-  main, #imagesDiv, .imageContainer, footer {
+  main, #imagesDiv, .imageContainer,  #buttonDiv, #videoDiv, footer {
     border: 1px solid #ffff00;
   } 
   
