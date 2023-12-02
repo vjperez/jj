@@ -63,7 +63,7 @@ function shuffleArray(arr){
 		      arr[anIndex] = arr[otherIndex];
 			  arr[otherIndex] = savedValue;
 			  
-		console.log(i + " shuffle")
+		//console.log(i + " shuffle")
 	}
 	return arr;
 }
