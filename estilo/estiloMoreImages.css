@@ -1,5 +1,5 @@
 /* Mobile Styles */
-body, #imagesDiv, #buttonDiv, #videoDiv {
+body, #imagesDiv, #buttonDiv, .videodiv {
   margin: 0;
   padding: 0;
 }
@@ -30,7 +30,7 @@ body, #imagesDiv, #buttonDiv, #videoDiv {
 }
 
 /* CSS to center the video */
-#videoDiv {
+.videodiv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,11 +51,11 @@ footer {
 
 /*  resposive code below this point */
 /* At viewport widths up to 768px */
-main, #imagesDiv, .imageContainer, #buttonDiv, #videoDiv, footer {
+main, #imagesDiv, .imageContainer, #buttonDiv, .videodiv, footer {
   border: 0px solid #ff0000;
 }
 
-main, #buttonDiv, #videoDiv, footer {
+main, #buttonDiv, .videodiv, footer {
   padding: 20px;
 }
 
@@ -79,11 +79,11 @@ main, #buttonDiv, #videoDiv, footer {
 
 /* Tablet Styles (768px) */
 @media (min-width: 768px) {
-  main, #imagesDiv, .imageContainer, #buttonDiv, #videoDiv,  footer{
+  main, #imagesDiv, .imageContainer, #buttonDiv, .videodiv,  footer{
     border: 0px solid #00ff00;
   }
   
-  main, #buttonDiv, #videoDiv, footer {
+  main, #buttonDiv, .videodiv, footer {
     padding: 40px;
   }
   
@@ -96,11 +96,11 @@ main, #buttonDiv, #videoDiv, footer {
 
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
-  main, #imagesDiv, .imageContainer, #buttonDiv, #videoDiv, footer {
+  main, #imagesDiv, .imageContainer, #buttonDiv, .videodiv, footer {
     border: 0px solid #0000ff;
   }  
   
-  main, #buttonDiv, #videoDiv, footer {
+  main, #buttonDiv, .videodiv, footer {
     padding: 60px;
   }
   
@@ -113,7 +113,7 @@ main, #buttonDiv, #videoDiv, footer {
 
 /* At viewport widths greater than 1200px */
 @media (min-width: 1200px) {
-  main, #imagesDiv, .imageContainer,  #buttonDiv, #videoDiv, footer {
+  main, #imagesDiv, .imageContainer,  #buttonDiv, .videodiv, footer {
     border: 0px solid #ffff00;
   } 
   
