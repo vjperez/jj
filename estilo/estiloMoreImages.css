@@ -10,6 +10,13 @@ body, #imagesDiv, #buttonDiv, .videodiv {
   height: auto;
 }
 
+#imagesDiv, #buttonDiv, .videodiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+
 #buttonDiv{
   text-align: center;
 }
@@ -34,9 +41,7 @@ body, #imagesDiv, #buttonDiv, .videodiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust height as needed */
 }
-
 
 /* Font family and size for footer */
 footer {
@@ -49,6 +54,8 @@ footer {
 
 
 
+
+
 /*  resposive code below this point */
 /* At viewport widths up to 768px */
 main, #imagesDiv, .imageContainer, #buttonDiv, .videodiv, footer {
@@ -57,14 +64,6 @@ main, #imagesDiv, .imageContainer, #buttonDiv, .videodiv, footer {
 
 main, #buttonDiv, .videodiv, footer {
   padding: 20px;
-}
-
-/*   these 4 values apply to all px sizes */
-#imagesDiv {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 60px;
 }
 
 .imageContainer {
@@ -94,6 +93,8 @@ main, #buttonDiv, .videodiv, footer {
 
 
 
+
+
 /* Desktop Styles (1024px) */
 @media (min-width: 1024px) {
   main, #imagesDiv, .imageContainer, #buttonDiv, .videodiv, footer {
@@ -108,6 +109,8 @@ main, #buttonDiv, .videodiv, footer {
     width: 333px; 
   }
 }
+
+
 
 
 
