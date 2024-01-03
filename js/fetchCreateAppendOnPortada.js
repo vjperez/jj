@@ -39,7 +39,7 @@ function createProductElements(productArr, parentElementPlaceId) {
     moreImagesLink.href = product.moreImagesHref;
     //moreImagesLink.target = '_blank';
     moreImagesLink.classList.add('product-button');
-    moreImagesLink.textContent = '+ images';
+    moreImagesLink.textContent = '+ details';
 
     productDiv.appendChild(imageLink);
     productDiv.appendChild(productDescription);
