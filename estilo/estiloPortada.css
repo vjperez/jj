@@ -42,6 +42,13 @@ footer {
   color: #65b0cf; /* Set font color to blue  */
 }
 
+/* CSS for product images */
+.footerImgContainer img {
+  width: 75px;
+  height: auto;
+}
+
+span.negro { color: #000000;  }
 
 
 /*  resposive code below this point */
