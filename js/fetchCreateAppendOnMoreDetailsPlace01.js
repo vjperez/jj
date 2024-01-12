@@ -1,7 +1,7 @@
 // Function to fetch JSON data
 async function fetchData() {
   try {
-    const response = await fetch('json/moreImagesPlace01Details.json');
+    const response = await fetch('json/moreDetailsPlace01.json');
     const datos = await response.json();
     return datos;
   } catch (error) {
