@@ -20,7 +20,7 @@ function createProductElements(productArr, parentElementPlaceId) {
 
     const productImage = document.createElement('img');
     productImage.src = product.imgSrc;
-    productImage.alt = 'Product Image';
+    productImage.alt = product.imgAlt;
     const imageLink = document.createElement('a');
     imageLink.href = product.imgHref;
     imageLink.target = '_blank';
@@ -35,15 +35,15 @@ function createProductElements(productArr, parentElementPlaceId) {
     buyNowLink.classList.add('product-button');
     buyNowLink.textContent = 'Buy Now';
 	
-	const moreImagesLink = document.createElement('a');
-    moreImagesLink.href = product.moreImagesHref;
-    //moreImagesLink.target = '_blank';
-    moreImagesLink.classList.add('product-button');
-    moreImagesLink.textContent = '+ details';
+	const moreDetailsLink = document.createElement('a');
+    moreDetailsLink.href = product.moreDetailsLinkHref;
+    //moreDetailsLink.target = '_blank';
+    moreDetailsLink.classList.add('product-button');
+    moreDetailsLink.textContent = '+ details';
 
     productDiv.appendChild(imageLink);
     productDiv.appendChild(productDescription);
-	productDiv.appendChild(moreImagesLink);
+	productDiv.appendChild(moreDetailsLink);
     productDiv.appendChild(buyNowLink);
 
     parentPlaceElement.appendChild(productDiv);

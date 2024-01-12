@@ -6,36 +6,41 @@
         {
           "imgHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER",
           "imgSrc": "imagenes/p1-product01.jpg",
+		  "imgAlt": "pink bag with 25 pink cones and 25 blue cones",
           "description": "25 Pink + 25 Blue Agility Training Cones - stylish pink carry bag",
-		  "moreImagesHref": "moreImagesPlace00.html",
+		  "moreDetailsLinkHref": "moreDetailsPlace00.html",
           "buyNowHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER"
         },
         {
           "imgHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER",
           "imgSrc": "imagenes/p1-product02.jpg",
+		  "imgAlt": "blue bag with 15 pink cones and 15 blue cones",
           "description": "15 Pink + 15 Blue Agility Training Cones - stylish blue carry bag",
-		  "moreImagesHref": "moreImagesPlace00.html",
+		  "moreDetailsLinkHref": "moreDetailsPlace00.html",
           "buyNowHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER"
         },
         {
           "imgHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER",
           "imgSrc": "imagenes/p1-product03.jpg",
+		  "imgAlt": "pink bag with 15 pink cones and 15 blue cones",		  
           "description": "15 Pink + 15 Blue Agility Training Cones - stylish pink carry bag",
-		  "moreImagesHref": "moreImagesPlace00.html",
+		  "moreDetailsLinkHref": "moreDetailsPlace00.html",
           "buyNowHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER"
         },
         {
           "imgHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER",
           "imgSrc": "imagenes/p1-product04.jpg",
+		  "imgAlt": "blue bag with 30 pink cones",		  
           "description": "30 Pink Agility Training Cones - stylish blue carry bag",
-		  "moreImagesHref": "moreImagesPlace00.html",
+		  "moreDetailsLinkHref": "moreDetailsPlace00.html",
           "buyNowHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER"
         },
         {
           "imgHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER",
           "imgSrc": "imagenes/p1-product05.jpg",
+		  "imgAlt": "pink bag with 30 pink cones",		  
           "description": "30 Pink Agility Training Cones - stylish pink carry bag",
-		  "moreImagesHref": "moreImagesPlace00.html",
+		  "moreDetailsLinkHref": "moreDetailsPlace00.html",
           "buyNowHref": "https://www.amazon.com/s?me=A1UKO0C2F9TS8G&marketplaceID=ATVPDKIKX0DER"
         }
       ]
@@ -46,8 +51,9 @@
         {
           "imgHref": "https://www.amazon.ca/s?me=A1UKO0C2F9TS8G&marketplaceID=A2EUQ1WTGCTBG2",
           "imgSrc": "imagenes/p2-product01.jpg",
+		  "imgAlt": "pink bag with 25 pink cones and 25 blue cones",
           "description": "25 Pink + 25 Blue Agility Training Cones - stylish pink carry bag",
-          "moreImagesHref": "moreImagesPlace01.html",
+          "moreDetailsLinkHref": "moreDetailsPlace01.html",
 		  "buyNowHref": "https://www.amazon.ca/s?me=A1UKO0C2F9TS8G&marketplaceID=A2EUQ1WTGCTBG2"
         }
       ]
